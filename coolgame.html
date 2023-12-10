@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="proj.css">
+    <script src="script.js"></script>
+    <title>Sustainability</title>
+</head> 
+<body>
+    <ul>
+      <li><a href="coolgame.html">Game</a></li>
+      <li><a href="index.html">Questionaire</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="home.html">Home</a></li>   
+</ul>
+    <header class = "sQuestion">
+        <h1>Sustainability</h1>
+    </header>
+
+  <title>Random Number Guessing Game</title>
+  <style>
+    /* Add some styling for the game interface */
+    body {
+      background-color: lightgray;
+      font-family: sans-serif;
+      text-align: center;
+      padding: 0px;
+    }
+
+    h1 {
+      color: rgb(0, 0, 0);
+    }
+
+    button {
+      border: none;
+      border-radius: 5px;
+      background-color: rgb(28, 167, 40);
+      color: white;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .game {
+      margin-top: 20px;
+    }
+
+    .game p {
+      font-size: 20px;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Add a title for the game -->
+  <h1>Random Number Guessing Game</h1>
+
+  <!-- Create a container for the game interface -->
+  <div class="game">
+    <!-- Display a message to prompt the user to make a guess -->
+    <p>Guess a number between 1 and 10:</p>
+    <!-- Create an input field for the user to enter their guess -->
+    <input type="number" id="guess" min="1" max="10">
+    <!-- Create a button to submit the guess -->
+    <button onclick="checkGuess()">Submit</button>
+  </div>
+
+  <!-- Add the JavaScript code for the game in a script tag -->
+  <script>
+    // Define a function to generate a random number between 1 and 10
+    function getRandomNumber() {
+      return Math.floor(Math.random() * 10) + 1;
+    }
+
+    // Define a function to check the user's guess
+    function checkGuess() {
+      // Get the user's guess from the input field
+      const guess = document.getElementById('guess').value;
+
+      // Generate a random number
+      const number = getRandomNumber();
+
+      // Check if the guess is correct
+      if (guess == number) {
+        alert('You guessed the correct number!');
+      } else {
+        alert('Sorry, you guessed incorrectly. The correct number was ' + number + '.');
+      }
+    }
+  </script>
+</body>
+</html>

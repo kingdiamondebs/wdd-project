@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="proj.css">
+    <script src="script.js"></script>
+    <title>Sustainability</title>
+</head> 
+<body>
+    <ul>
+        <li><a href="coolgame.html">Game</a></li>
+        <li><a href="index.html">Questionaire</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="home.html">Home</a></li>   
+    
+      </ul>
+    <header class = "sQuestion">
+        <h1>Sustainability</h1>
+    </header>
+
+    <section>
+        <!-- adding divs so styling is easier and selcted parts are grouped together-->
+        <div class = "wrapper">
+            <div class="form-welcome">
+                <p>Here's a little quiz to see how much you learned</p>
+            </div>
+            <!-- creating the form-->
+            <form id ="form" class ="qForm" action="https://formsubmit.co/nerdcorps.nc@gmail.com" method="post">
+                <!-- making the input fields for name, email and age-->
+                <div class="form-row">
+                    <div class = "form-label">
+                        <label>Name</label>
+                    </div>
+                    <div class = "form-input">
+                        <input id="name" type="text" name="Name" placeholder="Enter your name" required>
+                    </div>
+                </div>     
+
+                <div class = "form-row">
+                    <div class = "form-label">
+                        <label>Email</label>
+                    </div>
+                    <div class = "form-input">
+                        <input id = "email"type="email" name="Email" placeholder="Enter your email address" required>
+                    </div>
+                </div>  
+
+                <div class="form-row">
+                    <div class = "form-label">
+                        <label>Age</label>
+                    </div>
+                    <div class = form-input>
+                        <input type="number" name="Age" placeholder="Enter your age">
+                    </div>
+                </div>  
+
+                <!-- creating drop down menu for options to select type of degree currently studying-->
+                <div class = "form-row">
+                    <div class = "form-label">
+                        <label>What degree type are you currently in</label>
+                    </div>
+                    <div class = "form-selection">
+                        <select class = "selection">
+                            <option value="">Ordinary Bachelor Degree</option>
+                            <option value="">Honours Bachelor Degree </option>
+                            <option value="">Higher Diploma</option>
+                            <option value="">Masters Degree</option>
+                            <option value="">Doctoral Degree</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- creating the tick the box using radio buttons for the survey-->
+                <br>
+                <div class = "form-row">
+                    <div class = "form-label label">
+                       <strong><label >How often do you study a week?</label></strong>
+                    </div>
+                    <br>
+                    
+                    <div class = form-input>
+                        <input type="radio" name="study Schedule"><label value = "Don't study at all">Don't study at all</label>
+
+                        <br>
+
+                        <input type="radio" name="study Schedule"><label value = "Once a week">Once a week</label>
+
+                        <br>
+
+                        <input type="radio" name="study Schedule"><label value = "More than 3 times a week">More than 3 times a week</label>
+
+                        <br>
+
+                        <input type="radio" name="study Schedule"><label value = "Everyday of the week">Everyday of the week</label>
+                    </div>
+                </div>
+                <br>
+                <div class  ="form-row">
+                    <div class = "form-label label">
+                       <strong><label >How many Hours do you study a week?</label></strong>
+                    </div>
+                    <br>
+
+                    <div class = "form-input">
+                        <input type="radio" name="study Hours"><label value = "less than 1 a hour week"> less than 1 hour a week </label>
+
+                        <br>
+
+                        <input type="radio" name="study Hours"><label value = "3 hours a week">3 hours a week</label>
+                        <br>
+
+                        <input type="radio" name="study Hours"><label value = "4 or more hours a week">4 or more hours a week</label>
+
+                        <br>
+
+                        <input type="radio" name="study Hours"><label value = "Dont spend any time studying">Dont spend any time studying</label>
+                    </div>
+                </div>
+                <br>
+
+                <div class = "form-row">
+                    <div class = "form-label label">
+                        <strong><label >Where do you feel most comfortable studying?</label></strong>
+                    </div>
+                    <br>
+                    <div class = "form-input">
+                        <input type="radio" name="study Comfortably"><label value = "At Home"> At Home </label>
+
+                        <br>
+                        
+                        <input type="radio" name="study Comfortably"><label value = "In the library">In the library</label>
+
+                        <br>
+
+                        <input type="radio" name="study Comfortably"><label value = "On campus">On campus</label>
+                        
+                        <br>
+
+                        <input type="radio" name="study Comfortably"><label value = "In an empty classroom">In an empty classroom</label>
+                    </div>
+                </div>
+                <br>
+                
+                <div class = "form-row">
+                    <div class = "form-label label">
+                        <label>How would you try and make yourself study for longer?</label>
+                    </div>
+                    <div class = "form-input">
+                        <input class = "form-field" type="text" name="study" placeholder="How would you....">
+                    </div>
+                </div> 
+                <br>
+                <input class = "submit" type="submit" value="Submit Questionaire">
+                <br>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

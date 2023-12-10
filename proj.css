@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+/*dj*/
+body{
+    font-size: 20px;
+    height:165vh;
+    margin: 0px;
+    padding:0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    
+      background-color: lightgray;
+      font-family: sans-serif;
+      text-align: center;
+      padding: 0px;
+    
+    /*styling the background image to cover the full page*/
+    background-image: url("images/sky.jfif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+   
+}
+
+/*Styling the form*/
+.qForm{
+    text-align: center;
+}
+
+.sQuestion{
+    text-align: center;
+    width:100%;
+    margin: auto;
+}
+
+.wrapper{
+    width: 85%;
+    margin: auto;
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 14px 20px rgb(104, 97, 97);
+}
+
+.form-welcome{
+    text-align: center;
+}
+
+.form-row{
+    padding-bottom: 4px;
+    display: block;
+}
+
+.form-label{
+    display:inline-block;
+    width:44%;
+    text-align: right;
+}
+
+.form-input{
+    display:inline-block;
+    width: 54%;
+    text-align: left;
+}
+
+.form-selection{
+    display:inline-block;
+    width:54%;
+    text-align: left;
+}
+
+.selection{
+    padding:15px 0px;
+}
+
+.form-field{
+    width:400px;
+    height:100px;
+}
+
+.label{
+    text-align: center;
+}
+.submit{
+    background-color: rgb(231, 215, 215);
+    font-size: 20px;
+    border-radius: 25px;
+}
+
+
+/*https://www.w3schools.com/css/css_navbar_horizontal.asp*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: right;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
+
+  .layStudy, .struggleStudy{
+    width: 35%;
+  }
+
+  .nightStudy{
+    width:35%;
+    float: right;
+  }
+
+  .studyFriends{
+    width:45%;
+    float:right;
+  }
+  footer{
+    height: 60px;
+    text-align: center;
+    padding: 5px;
+    color:black;
+    background-color:white;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+
+  }
+  {
+	padding:0;
+	margin:0;
+}
+#game{
+	width: 300px;
+	height: 400px;
+	border: 1px solid black;
+	margin: auto;
+}
+#character{
+	width: 90px;
+	height: 90px;
+	background-color:red;
+	position: relative;
+	top: 300px;
+	left: 100px;
+}
+#block{
+	width: 100px;
+	height: 100px;
+	background-color: black;
+	position: relative;
+	animation: slide 1s infinity;
+}
+@keyframes slide{
+	0%{top:-100px};
+	1000%{top:500px};
+}
+
+#white{
+	width:300px;
+	height:110px;
+	position:500px;
+	top: 500px;
+	background-color: white;
+	z-index:100000
+    {
+        padding:0;
+        margin:0;
+    }
+    #game{
+        width: 300px;
+        height: 400px;
+        border: 1px solid black;
+        margin: auto;
+    }
+    #character{
+        width: 90px;
+        height: 90px;
+        background-color:red;
+        position: relative;
+        top: 300px;
+        left: 100px;
+    }
+    #block{
+        width: 100px;
+        height: 100px;
+        background-color: black;
+        position: relative;
+        animation: slide 1s infinity;
+    }
+    @keyframes slide{
+        0%{top:-100px};
+        1000%{top:500px};
+    }
+    
+    #white{
+        width:300px;
+        height:110px;
+        position:500px;
+        top: 500px;
+        background-color: white;
+        z-index:100000

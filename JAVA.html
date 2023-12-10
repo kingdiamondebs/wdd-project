@@ -1,0 +1,43 @@
+<script>
+    // Array to store image URLs and descriptions
+    const images = [
+        {
+            url: "large_image1.jpg",
+            description: "Description for image 1"
+        },
+        {
+            url: "large_image2.jpg",
+            description: "Description for image 2"
+        },
+        {
+            url: "large_image3.jpg",
+            description: "Description for image 3"
+        },
+        {
+            url: "large_image4.jpg",
+            description: "Description for image 4"
+        }
+    ];
+
+    // Function to open the large image and show description
+    function openImage(index) {
+        const largeImageContainer = document.getElementById("largeImageContainer");
+        const largeImage = document.getElementById("largeImage");
+        const imageDescription = document.getElementById("imageDescription");
+
+        // Set the source and description for the large image
+        largeImage.src = images[index].url;
+        imageDescription.textContent = images[index].description;
+
+        // Display the large image container
+        largeImageContainer.style.display = "block";
+    }
+
+    // Function to close the large image
+    function closeImage() {
+        const largeImageContainer = document.getElementById("largeImageContainer");
+
+        // Hide the large image container
+        largeImageContainer.style.display = "none";
+    }
+</script>
