@@ -90,5 +90,20 @@
       }
     }
   </script>
+
+<h4 id="myHeading">Sustainability is fun?</h4>
+<button id="myButton">Change Text</button>
+ 
+    <script>
+        // Accessing elements
+        let heading = document.getElementById("myHeading");
+        let button = document.getElementById("myButton");
+ 
+        // Event handling
+        button.addEventListener("click", function() {
+            // Modifying content
+            heading.innerText = "Sustainability is fun!";
+        });
+</script>
 </body>
 </html>
