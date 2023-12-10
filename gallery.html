@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Image Gallery</title>
+<style>
+article {
+  float: right;
+  padding: 20px;
+  width: 70%;
+  background-color: #52eb34;
+  
+}
+</style>
+</head>
+<body>
+    <!-- Gallery section -->
+
+  <article>
+    <h1 id="myHeading">Image 1</h1>
+    <button id="myButton">Change Text</button>
+    <p>Data centers, which are integral to the functioning of the computing industry, contribute significantly to carbon emissions.
+	These facilities require substantial amounts of energy for operation and cooling. Sustainable practices involve adopting renewable energy sources,
+	improving energy efficiency, and employing innovative cooling technologies to reduce the carbon footprint of data centers.</p>
+    
+  </article>
+	<img src="Sus 1.jpg" alt="1" width="400" height="400">
+	  <article>
+	<h1>Collaboration and Industry Networks:</h1>
+    <p>Sustainability efforts in the computing industry often benefit from collaboration and sharing best practices. In Ireland,
+	computing companies may engage in industry networks or collaborate with research institutions and government bodies to exchange knowledge and strategies for reducing environmental impact.
+	This collaborative approach can lead to more effective and widespread adoption of sustainable practices.</p>
+   
+  </article>
+	<img src="Sus 2.jpg" alt="2" width="300" height="400">
+	  <article>
+    <h1>Eco-Design and Product Life Extension:</h1>
+    <p>Sustainable computing involves designing products with a focus on longevity, repairability, and upgradability. Eco-design principles aim to create devices that are durable, easy to repair,
+	and have a longer lifespan, reducing the frequency of product replacements. Additionally, promoting initiatives such as electronic recycling and refurbishment extends the useful life of computing equipment,
+	minimizing electronic waste.</p>
+    
+  </article>
+	<img src="Sus 3.png" alt="3" width="400" height="400">
+	  <article>
+    <h1>Corporate Social Responsibility (CSR):</h1>
+    <p>Many companies in the computing industry are incorporating sustainability into their corporate social responsibility initiatives. This includes setting goals for reducing greenhouse gas emissions,
+	using renewable energy sources, and implementing eco-friendly practices. CSR efforts also extend to ethical considerations such as fair labor practices, social impact, and community engagement,
+	reflecting a broader commitment to sustainability beyond environmental concerns.</p>
+    
+  </article>
+	<img src="Sus 4.jpg" alt="4" width="300" height="300">
+
+
+    <!-- Large image container -->
+    <div id="largeImageContainer" style="display: none;">
+        <img id="JHUS.jpg" src="JHUS.jpg" alt="Large Image">
+        <p id="imageDescription"></p>
+        <button onclick="closeImage()">Close</button>
+    </div>
+
+    <script>
+        // Accessing elements
+        let heading = document.getElementById("myHeading");
+        let button = document.getElementById("myButton");
+
+        // Event handling
+        button.addEventListener("click", function() {
+            // Modifying content
+            heading.innerText = "Carbon Footprint of Data Centers:";
+        });
+    </script>
+    <script>
