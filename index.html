@@ -56,44 +56,44 @@
                     </div>
                 </div>  
 
-                <!-- creating drop down menu for options to select type of degree currently studying-->
+                <!-- creating drop down menu for options -->
                 <div class = "form-row">
                     <div class = "form-label">
-                        <label>What degree type are you currently in</label>
+                        <label>How many pillars of sustainability are there?</label>
                     </div>
                     <div class = "form-selection">
                         <select class = "selection">
-                            <option value="">Ordinary Bachelor Degree</option>
-                            <option value="">Honours Bachelor Degree </option>
-                            <option value="">Higher Diploma</option>
-                            <option value="">Masters Degree</option>
-                            <option value="">Doctoral Degree</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">1</option>
+                            <option value="">43,901</option>
+                            <option value="">None</option>
                         </select>
                     </div>
                 </div>
 
-                <!-- creating the tick the box using radio buttons for the survey-->
+                <!-- creating the tick the box using radio buttons -->
                 <br>
                 <div class = "form-row">
                     <div class = "form-label label">
-                       <strong><label >How often do you study a week?</label></strong>
+                       <strong><label >"Sustainability is the ability to _____ a process"</label></strong>
                     </div>
                     <br>
                     
                     <div class = form-input>
-                        <input type="radio" name="study Schedule"><label value = "Don't study at all">Don't study at all</label>
+                        <input type="radio" name="study Schedule"><label value = "Don't study at all">Sustain</label>
 
                         <br>
 
-                        <input type="radio" name="study Schedule"><label value = "Once a week">Once a week</label>
+                        <input type="radio" name="study Schedule"><label value = "Once a week">Retain</label>
 
                         <br>
 
-                        <input type="radio" name="study Schedule"><label value = "More than 3 times a week">More than 3 times a week</label>
+                        <input type="radio" name="study Schedule"><label value = "More than 3 times a week">Maintain</label>
 
                         <br>
 
-                        <input type="radio" name="study Schedule"><label value = "Everyday of the week">Everyday of the week</label>
+                        <input type="radio" name="study Schedule"><label value = "Everyday of the week">Refrain</label>
                     </div>
                 </div>
                 <br>
@@ -122,33 +122,27 @@
 
                 <div class = "form-row">
                     <div class = "form-label label">
-                        <strong><label >Where do you feel most comfortable studying?</label></strong>
+                        <strong><label >True or False. Economic sustainability is all about making money.</label></strong>
                     </div>
                     <br>
                     <div class = "form-input">
-                        <input type="radio" name="study Comfortably"><label value = "At Home"> At Home </label>
+                        <input type="radio" name="study Comfortably"><label value = "True">True</label>
 
                         <br>
                         
-                        <input type="radio" name="study Comfortably"><label value = "In the library">In the library</label>
-
-                        <br>
-
-                        <input type="radio" name="study Comfortably"><label value = "On campus">On campus</label>
+                        <input type="radio" name="study Comfortably"><label value = "False">False</label>
                         
                         <br>
-
-                        <input type="radio" name="study Comfortably"><label value = "In an empty classroom">In an empty classroom</label>
                     </div>
                 </div>
                 <br>
                 
                 <div class = "form-row">
                     <div class = "form-label label">
-                        <label>How would you try and make yourself study for longer?</label>
+                        <label>In three sentences, write how you would improve any type of sustainability in your workplace</label>
                     </div>
                     <div class = "form-input">
-                        <input class = "form-field" type="text" name="study" placeholder="How would you....">
+                        <input class = "form-field" type="text" name="study" placeholder="I would....">
                     </div>
                 </div> 
                 <br>
@@ -157,5 +151,20 @@
             </form>
         </div>
     </section>
+
+            <h4 id="myHeading">Sustainability is fun?</h4>
+<button id="myButton">Change Text</button>
+ 
+    <script>
+        // Accessing elements
+        let heading = document.getElementById("myHeading");
+        let button = document.getElementById("myButton");
+ 
+        // Event handling
+        button.addEventListener("click", function() {
+            // Modifying content
+            heading.innerText = "Sustainability is fun!";
+        });
+</script>
 </body>
 </html>
